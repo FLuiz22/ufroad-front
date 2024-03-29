@@ -9,7 +9,13 @@
             <el-card class="login">
                 <el-text class="page_indicator">Login</el-text>
                 <div class="input_box">
-                    <el-input class="input_fields" v-model="data.email" placeholder="Email" />
+                    <el-input class="input_fields" v-model="data.email" placeholder="Email">
+                        <template #suffix>
+                            <el-icon class="input_icon">
+                                <Message />
+                            </el-icon>
+                        </template>
+                    </el-input>
                     <div class="line" />
                 </div>
 
@@ -19,13 +25,16 @@
 
                 </div>
     
-                <div>
-                    <el-checkbox class="checkbox" v-model="data.keeploged" label="Manter-me conectado" size="small" />
+                <div class="util">
+                    <el-checkbox class="checkbox" v-model="data.keeploged" size="small">
+                        <span slot="label" class="checkbox-label">Manter-me conectado</span>
+                    </el-checkbox>
                     <el-text class="forgotPass">Esqueci a senha</el-text>
                 </div>
 
-                <el-button class="enter" round>Entrar</el-button>
-
+                <div class="btn-ent">
+                    <el-button class="enter" round>Entrar</el-button>
+                </div>
             </el-card>
         </div>
     </div>

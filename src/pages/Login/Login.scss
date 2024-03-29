@@ -7,14 +7,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    height: 100vh;
 }
 
 .header {
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-top: 4%;
+    margin-top: -10%;
 }
 
 .logo {
@@ -64,7 +64,8 @@
 }
 
 .input_fields {
-    width: 80%;
+    width: 100%;
+    --color: #FFF;
     --el-border-color: none;
     --el-input-bg-color: transparent;
     --el-input-placeholder-color: #FFF;
@@ -73,26 +74,54 @@
     --el-input-text-color: #FFF;
 }
 
+.input_icon {
+    font-size: 18px;
+}
+
 .line {
     border-top: 1px solid var(--el-border-color);
 }
 
 .checkbox {
-    justify-content: space-between;
+    --el-checkbox-bg-color: transparent;
+}
+
+.checkbox-label {
     color: #FFF;
     font-family: Inter;
-    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    background-color: transparent;
-    --el-checkbox-checked-text-color: #FFF;
+}
+
+.util {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgotPass {
+    color: #FFF;
+    font-family: Inter;
+    font-style: normal;
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 400;
 }
 
 .enter {
-    display: flex;
-    width: 251px;
-    padding: 15px 0px;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    background-color: #F36A8D;
+    width: 40%;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    position: relative;
+    align-items: right;
+    border-color: transparent;
+    color: #FFF;
+    font-family: Inter;
+    font-weight: 400;
+}
+
+.btn-ent {
+    text-align: center;
 }
