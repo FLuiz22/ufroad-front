@@ -1,0 +1,98 @@
+.home {
+    background-image: url(../../assets/background-login-register.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 5%;
+}
+
+.back {
+    width: 30px;
+    height: 25px;
+    margin-right: 5%;
+}
+
+.content {
+    display: inline;
+    position: center;
+    justify-self: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    margin-left: 28%;
+    font-family: Inter;
+}
+
+.login {
+    border-radius: 30px;
+    background: #908DFF;
+    border: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 75%;
+}
+
+.page_indicator {
+    color: #FFF;
+    --el-font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input_box {
+    margin-top: 13%;
+    margin-bottom: 7%;
+}
+
+.input_fields {
+    width: 80%;
+    --el-border-color: none;
+    --el-input-bg-color: transparent;
+    --el-input-placeholder-color: #FFF;
+    --el-input-hover-border-color: transparent;
+    --el-input-focus-border-color: transparent;
+    --el-input-text-color: #FFF;
+}
+
+.line {
+    border-top: 1px solid var(--el-border-color);
+}
+
+.checkbox {
+    justify-content: space-between;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: transparent;
+    --el-checkbox-checked-text-color: #FFF;
+}
+
+.enter {
+    display: flex;
+    width: 251px;
+    padding: 15px 0px;
+    justify-content: center;
+    align-items: center;
+}
