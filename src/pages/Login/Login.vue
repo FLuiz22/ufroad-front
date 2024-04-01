@@ -7,7 +7,12 @@
 
         <div class="content">
             <el-card class="login">
-                <el-text class="page_indicator">Login</el-text>
+                <template #header>
+                    <div class="page_indicator">  
+                        <el-button class="page_sel page_log">Login</el-button>
+                        <el-button class="page_sel page_cad">Cadastrar</el-button>
+                    </div>
+                </template>
                 <div class="input_box">
                     <el-input class="input_fields" v-model="data.email" placeholder="Email">
                         <template #suffix>
@@ -20,7 +25,13 @@
                 </div>
 
                 <div class="input_box">
-                    <el-input class="input_fields" v-model="data.password" type="password" placeholder="Senha" />
+                    <el-input class="input_fields" v-model="data.password" type="password" placeholder="Senha">
+                        <template #suffix>
+                            <el-icon class="input_icon">
+                                <Lock />
+                            </el-icon>
+                        </template>
+                    </el-input>
                     <div class="line" />
 
                 </div>
