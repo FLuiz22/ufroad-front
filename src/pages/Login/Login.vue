@@ -9,8 +9,12 @@
             <el-card class="login">
                 <template #header>
                     <div class="page_indicator">  
-                        <el-button class="page_sel page_log">Login</el-button>
-                        <el-button class="page_sel page_cad">Cadastrar</el-button>
+                        <el-button class="page_sel page_log">
+                            <el-text class="btn-text">Login</el-text>
+                        </el-button>
+                        <el-button class="page_sel page_cad">
+                            <el-text class="btn-text">Cadastrar</el-text>
+                        </el-button>
                     </div>
                 </template>
                 <div class="input_box">
@@ -43,8 +47,10 @@
                     <el-text class="forgotPass">Esqueci a senha</el-text>
                 </div>
 
-                <div class="btn-ent">
-                    <el-button class="enter" round>Entrar</el-button>
+                <div class="btn">
+                    <el-button class="btn-enter" round>
+                        <el-text class="btn-text">Entrar</el-text>
+                    </el-button>
                 </div>
             </el-card>
         </div>
