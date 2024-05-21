@@ -7,9 +7,10 @@ export default {
     data() {
         return {
             data: {
+                name: '',
                 email: '',
                 password: '',
-                keeploged: Boolean,
+                course: '',
             },
 
             logo,
@@ -18,8 +19,8 @@ export default {
     },
 
     methods: {
-        regPage() {
-            this.$router.push({name: 'Register'})
+        logPage() {
+            this.$router.push({name: 'Login'})
         }
     }
 }

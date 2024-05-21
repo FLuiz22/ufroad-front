@@ -8,15 +8,27 @@
         <div class="content">
             <el-card class="login">
                 <template #header>
-                    <div class="page_indicator">  
-                        <el-button class="page_sel page_log">
+                    <div class="page_indicator">
+                        <el-button class="page_sel page_log" @click="logPage()">
                             <el-text class="btn-text">Login</el-text>
                         </el-button>
-                        <el-button class="page_sel page_cad" @click="regPage()">
+                        <el-button class="page_sel page_cad">
                             <el-text class="btn-text">Cadastrar</el-text>
                         </el-button>
                     </div>
                 </template>
+
+                <div class="input_box">
+                    <el-input class="input_fields" v-model="data.name" placeholder="Nome">
+                        <template #suffix>
+                            <el-icon class="input_icon">
+                                <User />
+                            </el-icon>
+                        </template>
+                    </el-input>
+                    <div class="line" />
+                </div>
+
                 <div class="input_box">
                     <el-input class="input_fields" v-model="data.email" placeholder="Email">
                         <template #suffix>
@@ -27,7 +39,7 @@
                     </el-input>
                     <div class="line" />
                 </div>
-
+                
                 <div class="input_box">
                     <el-input class="input_fields" v-model="data.password" type="password" placeholder="Senha">
                         <template #suffix>
@@ -37,19 +49,16 @@
                         </template>
                     </el-input>
                     <div class="line" />
-
                 </div>
-    
-                <div class="util">
-                    <el-checkbox class="checkbox" v-model="data.keeploged" size="small">
-                        <span slot="label" class="checkbox-label">Manter-me conectado</span>
-                    </el-checkbox>
-                    <el-text class="forgotPass">Esqueci a senha</el-text>
+                
+                <div class="input_box">
+                    <el-select class="select_field" v-model="data.course" placeholder="Curso" />
+                    <div class="line" />
                 </div>
 
                 <div class="btn">
                     <el-button class="btn-enter" round>
-                        <el-text class="btn-text">Entrar</el-text>
+                        <el-text class="btn-text">Cadastrar</el-text>
                     </el-button>
                 </div>
             </el-card>
@@ -58,11 +67,11 @@
 </template>
 
 <style lang="scss" scoped>
-@import './Login.scss';
+@import './Register.scss';
 </style>
 
 <script lang="ts">
-    import scriptModule from './Login.ts';
+    import scriptModule from './Register.ts';
 
     export default {
         name: scriptModule.name,
