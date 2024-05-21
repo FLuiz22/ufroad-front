@@ -15,5 +15,11 @@ export default {
             logo,
             back
         }
+    },
+
+    methods: {
+        regPage() {
+            this.$router.push({name: 'Register'})
+        }
     }
 }

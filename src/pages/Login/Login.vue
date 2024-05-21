@@ -12,7 +12,7 @@
                         <el-button class="page_sel page_log">
                             <el-text class="btn-text">Login</el-text>
                         </el-button>
-                        <el-button class="page_sel page_cad">
+                        <el-button class="page_sel page_cad" @click="regPage()">
                             <el-text class="btn-text">Cadastrar</el-text>
                         </el-button>
                     </div>
@@ -67,5 +67,6 @@
     export default {
         name: scriptModule.name,
         data: scriptModule.data,
+        methods: scriptModule.methods
     }
 </script>
