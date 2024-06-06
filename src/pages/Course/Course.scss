@@ -1,0 +1,45 @@
+.home {
+    background-image: url(../../assets/background-v2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #11043D;
+    height: 9vh;
+}
+
+.lhead {
+    margin-left: 5%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 10px;
+}
+
+.rhead {
+    display: flex;
+    margin-right: 5%;
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+}
+
+.back {
+    width: 25px;
+    height: 20px;
+}
+
+.htex {
+    color: #FFBD20;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
