@@ -22,6 +22,7 @@
 
     export default {
         name: scriptModule.name,
+        mounted: scriptModule.mounted,
         data: scriptModule.data,
         methods: scriptModule.methods
     }
